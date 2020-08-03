@@ -1,0 +1,759 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-size: 12px;
+}
+h1
+{
+    font-size: 24px;
+}
+h2
+{
+    font-size: 18px;
+}
+h3
+{
+    font-size: 14px;
+}
+a
+{
+    text-decoration: none;
+}
+/*!!!Блок "Шапка" - лого + меню__*//*!!!Блок "Шапка" - лого + меню__*//*!!!Блок "Шапка" - лого + меню__*/
+.rat-background
+{
+    width: 100%;
+    height: 62px;
+    background-color: #002E91;
+    position: absolute;
+    
+}
+
+
+
+.rat
+{
+    position: relative;
+}
+/*Лого*/
+.rat-logo
+{
+    text-align: center;
+    height: 62px;
+ 
+    
+    
+
+}
+/*Меню - общее*/
+.rat-menu
+{
+    font-size: 18px;
+    margin-bottom: 2px;
+    
+    text-align: center;
+    padding-left: 0;
+    margin-top: 12px;
+    
+    z-index: 10;
+    
+    
+    
+    
+
+}
+/*Главное меню*/
+.rat-menu__menu
+{
+    display: inline-block;
+	position: relative;
+    width: 125px;
+    
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin: 0 9px;
+
+    
+}
+/*Переход к списку выпадающего меню*/
+.rat-menu__menu:hover ul
+{
+    margin: 10px 0px 0 -1px;
+    background-color: hsla(360,100%,100%,0.85);
+    
+    position: absolute;
+}
+/*Переход к элементам списка выпадающего меню*/
+.rat-menu__menu:hover .rat-menu__sub-menu
+{
+    display: block;
+}
+
+/*отступы элементов меню*/
+.rat-menu__menu,
+.rat-menu__sub-menu a
+{
+    padding:  4px 0 10px 0;
+    z-index: 10;
+}
+
+/*ссылки меню*/
+.rat-menu__menu a
+{
+    display: block;
+    padding-top: 5px;
+    
+    font-family: Verdana, Arial, sans-serif;    
+    font-weight: bold;
+    color: #AEC9FF;
+    
+    
+    display: inline-block;
+	position: relative;
+    width: 125px;
+}
+/*ссылки при наведении мышью*/
+.rat-menu__menu a:hover
+{
+    color: white;
+}
+/*побочное меню*/
+.rat-menu__sub-menu
+{
+    display: none;
+   
+  
+    
+   
+
+}
+/*ссылки выпадающего меню*/
+.rat-menu__sub-menu a
+{
+    font-size: 13px;
+    font-family: Verdana, Arial, sans-serif;   
+    
+    color: #00246F;
+}
+/*ссылки побочного меню при наведении мышью*/
+.rat-menu__sub-menu a:hover
+{
+    color: #BBD9FF;
+    background-color: #00246F ;
+    
+}
+
+.rat-banner
+{
+    margin: 0 0 0 10px;
+    position: relative;
+    z-index: 1;
+
+}
+.rat-banner-background
+{
+    height: 200px;
+    z-index: 5;
+    position: absolute;
+    
+    margin-left: 30px;
+    margin-top: 60px;
+   
+    color: white;
+    width: 480px;
+    
+    font-family: Verdana, Arial, sans-serif;
+   
+    line-height: 1.8em;
+    word-spacing: 1.5px;
+	letter-spacing: 0.8px;
+    
+    font-size: 14px;
+    
+    background-color: rgba(26, 99,255,0.2);
+    
+    border-radius: 50px;
+}
+.rat-banner-background__title
+{
+    margin-bottom: 20px;
+    padding-top: 15px;
+    margin-left: 35px;
+    
+    
+}
+.rat-banner-background__list li
+{
+    margin: 10px 0 10px 35px;
+    
+}
+
+/*!!!Блок "Поиск"*//*!!!Блок "Поиск"*//*!!!Блок "Поиск"*//*!!!Блок "Поиск"*//*!!!Блок "Поиск"*/
+.s-search
+{
+    margin-top: 30px; 
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    
+    color: #444444;
+    
+
+}
+/*строка поиска*/
+.s-search__text
+{
+    width: 160px;
+    margin-right: -5px;
+    word-spacing: 1.5px;
+	letter-spacing: 0.8px;
+    border: 1px ridge #002E91;
+    padding: 1px 0 1px 3px;
+}
+/*кнопка поиска*/
+.s-search__button
+{
+    width: 50px;
+    background-color: #002E91 ;
+	letter-spacing: 1px;
+    border: 2px ridge #002E91 ;
+    color: #DAEDFF;
+    
+}
+.s-search__button:hover
+{
+    cursor: pointer;
+}
+
+/*Страница поиска*/
+.s-search-display
+{
+    min-height: 250px;
+    line-height: 1.8em;
+    word-spacing: 1.5px;
+	letter-spacing: 0.8px;  
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    
+    color: #444444;
+}
+
+.s-search-display h1
+{
+    font-family: Verdana, Arial, sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+/*	color: #002E91;*/
+    padding-left: 3px;
+    
+    border-bottom: 2.5px dotted #1A34FF;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    padding-top: 25px;
+    padding-left: 5px;
+}
+/*Стили ключевого слова*/
+.s-search-display__result
+{
+    font-family: Verdana, Arial, sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+/*	color: #002E91;*/
+    padding-left: 3px;
+    
+    border-bottom: 2.5px dotted #1A34FF;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    padding-top: 27px;
+    padding-left: 5px;
+    
+}
+.s-search-display__word
+{
+    color: #1A34FF;
+    
+    
+}
+
+
+/*Заголовок статьи*/
+.s-search-display__title
+{
+    text-indent: 40px;
+}
+/*Описание статьи*/
+.s-search-display__about
+{
+    text-indent: 40px;
+}
+/*Дата написания статьи*/
+.s-search-display__date
+{
+    font-style: italic;
+    text-indent: 40px;
+}
+
+.s-search-display__line
+{
+    border-bottom: 1px solid silver;
+    margin: 12px 0;
+    
+}
+
+.s-search-display__error
+{
+    font-family: Verdana, Arial, sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+    color: #444444;
+    padding-left: 3px;
+    
+    
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    padding-top: 27px;
+    padding-left: 5px;
+    min-height: 200px;
+}
+
+/*!!!Блок "Главная страница"*//*!!!Блок "Главная страница"*//*!!!Блок "Главная страница"*/
+
+
+.g-content
+{
+    
+}
+/*категория главной страницы*/
+.g-content__category
+{
+    border-bottom: 2.5px dotted #1A34FF;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-left: 5px;
+}
+/*ссылка категории*/
+.g-content__category a
+{
+    font-family: Verdana, Arial, sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+/*	color: #002E91;*/
+    padding-left: 3px;
+    
+ 
+    
+	
+}
+/*ссылка категории при наведении*/
+.g-content__category a:hover
+{
+/*    color: #7FA8FF;*/
+   
+}
+/*Собственные отступы элементов*/
+.g-content__margin
+{
+    
+}
+/*Таблицы для выравнивания по низу*/
+.g-content__h-table
+{
+    border-collapse: collapse;
+}
+/*ячейка таблицы*/
+.g-content__h-table td
+{
+    vertical-align: bottom;
+}
+/*ссылки заголовков статей*/
+.g-content__title a
+{
+    font-family: Verdana, Arial, sans-serif;
+	
+/*    color: white;*/
+    width: 220px;
+    display: table-cell;
+/*    color: #002E91;*/
+    line-height: 1.5em;
+    word-spacing: 1.5px;
+	letter-spacing: 0.9px;  
+    font-size: 14px;
+    padding: 5px;
+    
+    
+    border-bottom: 4px solid #1A34FF;
+}
+.g-content__title a:first-letter
+{
+/*    color: #7FA8FF;*/
+    
+}
+/*ссылки заголовков при наведении*/
+.g-content__title a:hover
+{
+/*    color: #7FA8FF;*/
+/*    background-color: #00246F;*/
+/*    border-bottom: 4px solid #00246F;*/
+    
+}
+/*изображение гс*/
+.g-content__image
+{
+    
+    
+    width: 220px;
+    height: 165px;
+}
+/*наводка изображения*/
+.g-content__image:hover
+{
+    -webkit-filter: brightness(65%);
+}
+/*описание статьи гв*/
+.g-content__about
+{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8em;
+    word-spacing: 1.5px;
+	letter-spacing: 0.8px;
+    
+    color: #444444;
+}
+/*отступы между статьями*/
+.g-content__h-margin
+{
+    padding: 10px 0 10px 0;
+}
+
+/*!!!Блок "Категория"*//*!!!Блок "Категория"*//*!!!Блок "Категория"*//*!!!Блок "Категория"*/
+.c-content
+{
+    
+}
+/*Раздел категории*/
+.c-content__category
+{
+    font-family: Verdana, Arial, sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+/*	color: #002E91;*/
+    padding-left: 3px;
+    
+    border-bottom: 2.5px dotted #1A34FF;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-left: 5px;
+}
+/*ссылки статьи*/
+.c-content__title
+{
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.c-content__title a
+{
+    font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+/*    color: #002E91;*/
+    line-height: 1.5em;
+    padding-left: 3px;
+    padding: 5px 5px 5px 3px;
+}
+/*ссылки статьи при наведении*/
+.c-content__title a:hover
+{
+/*    color: #7FA8FF;*/
+/*    background-color: #00246F;*/
+    
+}
+/*линия под концом статьи*/
+.c-content__h-br
+{
+    border-bottom: 2px dotted #1A34FF;
+    padding-bottom: 30px;
+}
+/*Подкатегория категории*/
+.c-content__sub-cat a
+{
+    font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+/*    color: #002E91;*/
+    
+    
+    
+}
+/*Наведение подкатегории*/
+.c-content__sub-cat a:hover
+{
+/*    color: #7FA8FF;*/
+}
+/*Блок с изображением и описанием*/
+.c-content-im-ab
+{
+    
+}
+/*Изображение статьи*/
+.c-content__image
+{
+    width: 120px;
+    height: 90px;
+    float: left;
+	margin-right: 10px; 
+}
+/*Наведение на изображение статьи*/
+.c-content__image:hover
+{
+    -webkit-filter: brightness(65%);
+}
+/*Описание статьи*/
+.c-content__about
+{
+    margin-top: -20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+   
+    line-height: 1.8em;
+    word-spacing: 1.5px;
+	letter-spacing: 0.8px;
+    
+    color: #444444;
+    
+}
+
+.c-content__error
+{
+    min-height: 230px;
+    line-height: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*Пагинация - страницы БЛОК*/
+.c-content__pagination
+{
+    padding: 20px;
+    text-align: center;
+}
+/*Ссылки неактивных станиц и ? активная страница */
+.c-content__pagination a,
+.page-numbers
+{
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    color: #DAEDFF;
+
+    border: 1px solid black;
+    
+    background-color: #002E91;
+    margin-left: -5px;
+}
+/*ссылка неактивных страниц при наведении*/
+.c-content__pagination a:hover
+{
+    color: #002E91;
+    background-color: #DAEDFF;
+}
+/*? стиль активной страницы*/
+.current
+{
+    color: #444444;
+    background-color: white;
+}
+/*!!! Блок "Статья"*//*!!! Блок "Статья"*//*!!! Блок "Статья"*//*!!! Блок "Статья"*//*!!! Блок "Статья"*/
+.si-content
+{
+    
+}
+.si-content__title
+{
+    text-align: center;
+    padding-bottom: 10px;
+    
+    color: #444444;
+    
+    
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    font-family: Verdana, Arial, sans-serif;
+    
+    
+}
+.si-content__image
+{
+    text-align: center;
+}
+.si-content__text
+{
+    line-height: 1.8em;
+    text-indent: 40px;
+	font-size: 14px;
+	word-spacing: 1.5px;
+	letter-spacing: 0.8px;
+	font-family: Verdana, Arial, sans-serif;
+    
+    color: #444444;
+}
+.si-content__text ol
+{
+    margin-left: 82px;
+}
+.si-content__text ul
+{
+    margin-left: 20px;
+}
+.si-content__text ol > li
+{
+    text-indent: 0px;
+    font-style: italic;
+}
+.si-content__text p > img
+{
+    margin-left: -40px;
+    width: 700px;
+	height: 380px;
+    text-align: center;
+}
+.si-content__text p.small > img.small
+{
+    width: 600px;
+    height: 470px; 
+}
+.si-content__text p.small
+{
+    text-align: center;
+}
+}
+.si-content__text
+{
+    
+}
+
+
+
+
+
+
+/*!!!Блок "Подвал"*//*!!!Блок "Подвал"*//*!!!Блок "Подвал"*//*!!!Блок "Подвал"*//*!!!Блок "Подвал"*/
+
+/*общие настройки подвала*/
+.footer
+{
+
+}
+/*меню подвала*/
+.footer-menu
+{
+    padding-top: 8px;
+    background-color: #002E91; 
+    text-align: center; 
+}
+/*ссылки меню подвала*/
+.footer-menu a
+{
+    font-family: Verdana, Arial, sans-serif;    
+    font-weight: bold;
+    font-size: 14px;
+}
+/*ссылки при наведении мышью*/
+
+/*главное меню подвала*/
+.footer-menu__menu
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+}
+/*ссылки главного меню*/
+.footer-menu__menu a
+{
+    color: #AEC9FF;
+    font-size: 18px;
+}
+
+.footer-menu__menu a:hover
+{
+    color: white;
+}
+
+/*список главного меню*/
+.footer-menu__menu ul
+{
+    padding: 10px 0 15px 0;
+}
+
+
+/*побочное меню подвала*/
+.footer-menu__sub-menu
+{
+    
+    display: block;
+}
+/*ссылки побочного меню подвала*/
+.footer-menu__sub-menu a
+{
+    display: block;
+    text-decoration: none;
+    color: #AEC9FF;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footer-menu__sub-menu a:hover
+{
+/*    background-color: #00246F;*/
+    color: white;
+/*    border-left: 2px solid white;*/
+}
+
+
+
+
+/*Общие настройки*/
+.g-content__category a,
+.g-content__title a,
+.c-content__title a,
+.c-content__category,
+.c-content__sub-cat a,
+.s-search-display__title a
+{
+    color: #444444;
+
+}
+
+.g-content__category a:hover,
+.g-content__title a:hover,
+.c-content__title a:hover,
+.c-content__sub-cat a:hover,
+.s-search-display__title a:hover
+{
+    color: #1A34FF;
+}
+
+.g-content__category a:active,
+.g-content__title a:active,
+.c-content__title a:active,
+.c-content__sub-cat a:active,
+.s-search-display__title a:active
+{
+    color: red; 
+}
+
+
+
+
+
+
+
+
+
